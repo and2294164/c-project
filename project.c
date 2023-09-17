@@ -54,7 +54,7 @@ int main(void) {
     read_terms_from_file(&term_list);
 
     /* Test term code */
-    printf("NAME: SAMPLE OUTPUT\n");
+    printf("NAME: Andrew Bohata\n");
     printf("Testing term.c/h:\n");
     printf("testterm1: %s\n", term_to_string(&testterm1));
     printf("testterm2: %s\n", term_to_string(&testterm2));
@@ -87,7 +87,7 @@ int main(void) {
     poly2 = combine_like_terms(poly1);
     printf("\nCombined: : ");
     print_polynomial(poly2);
-    printf("\nNAME: SAMPLE OUTPUT\n");
+    printf("\nNAME: Andrew Bohata\n");
     
 
     return 0;

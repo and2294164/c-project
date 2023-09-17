@@ -14,17 +14,21 @@ typedef struct poly {
 
 
 
-poly_t * new_polynomial();
+poly_t* new_polynomial();
 void print_polynomial(const poly_t* poly);
 void add_to_polynomial(poly_t* poly, const term_t* term);
-void combine_like_terms(const poly_t* poly);
+poly_t* combine_like_terms(const poly_t* poly);
 void delete_polynomial(poly_t** poly);
-/* extra functions added to increase readability*/
+
+/* extra functions added to increase readability / functionality*/
 
 term_t* get_term(const poly_t*);
 bool is_last_term(poly_t*);
 void update_order(poly_t*, const term_t*);
 void print_poly_terms(poly_t* curr);
+int num_of_terms(const poly_t* poly);
+bool match_terms(poly_t*, term_t*);
+void remove_term(poly_t*, int);
 
 
 #endif
