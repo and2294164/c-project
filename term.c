@@ -62,7 +62,7 @@ char* term_to_string(const term_t* term) {
     return count;
 }*/
 
-// FIXME: remove main method for final code
+/*
 int main(void) {
 
     const term_t term1 = {3, 'x', 2};
@@ -78,5 +78,5 @@ int main(void) {
                         strlen(term_to_string(&term3)) );
 
 
-}
+}*/
 
